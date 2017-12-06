@@ -1,2 +1,9 @@
 /* global styles */
 
+$darkColor: black;
+$lightColor: white;
+
+.darkBackground {
+    background: $darkColor;
+    color: $lightColor;
+}
