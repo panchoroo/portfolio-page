@@ -111,7 +111,7 @@
             <ul class="portfolio">
                 <li class="project">
                     <img src="http://fillmurray.com/270/300" alt="">
-                    <h6 class="tag">tags?</h6>
+                    <!-- <h6 class="tag">tags?</h6> -->
                     <h6>Bee Game</h6>
                     <p>My first Javascript project!</p>
                     <div class="twoButtons">
@@ -121,7 +121,6 @@
                 </li>
                 <li class="project">
                     <img src="http://fillmurray.com/270/300" alt="">
-                    <h6 class="tag">tags?</h6>
                     <h6>Bee Game</h6>
                     <p>My first Javascript project!</p>
                     <div class="twoButtons">
@@ -131,7 +130,6 @@
                 </li>
                 <li class="project">
                     <img src="http://fillmurray.com/270/300" alt="">
-                    <h6 class="tag">tags?</h6>
                     <h6>Bee Game</h6>
                     <p>My first Javascript project!</p>
                     <div class="twoButtons">
@@ -141,7 +139,6 @@
                 </li>
                 <li class="project">
                     <img src="http://fillmurray.com/270/300" alt="">
-                    <h6 class="tag">tags?</h6>
                     <h6>Bee Game</h6>
                     <p>My first Javascript project!</p>
                     <div class="twoButtons">
@@ -211,10 +208,15 @@
                 <h6>My Contact Info</h6>
             </div>
             <form class="contactForm" action="https://formspree.io/amie@amieeverett.com" method="POST">
+                <h3 class="">Leave Me A Message</h3>
+                <label for="name">Name</label>
                 <input type="text" name="name">
+                <label for="email">Email</label>
                 <input type="email" name="_replyto">
+                <label for="subject">Subject</label>
                 <input type="text" name="subject">
-                <input type="textarea" name="message">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 <input type="submit" value="Send">
                 <!-- Get in touch? or in footer? -->
             </form>
@@ -225,7 +227,54 @@
     <!-- end contact -->
 
     <footer class="darkBackground">
+        <div class="footerInfo wrapper">
+            <div class="contactMe">
+                <h6>Contact Me</h6>
+                <ul class="aboutInfoFooter">
+                    <li>Full name
+                    <span>:Amie Everett</span>
+                    <li>Occupation
+                        <span>:Professional Web Developer</span>
+                    </li>
+                    <!-- <li>Phone <span></span>:647-339-8018</span></li> -->
+                    <li>Email
+                        <span>:amie@amieeverett.com</span>
+                    </li>
+                    <li>Website
+                        <span>:amieeverett.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerRight">
 
+                <div class="aboutMe">
+                    <h6>About Me</h6>
+                    <p>Hi! I'm Amie and I've always loved puzzles. I taught myself to code for fun because it was just like solving a puzzle. I
+                    started with Python and solved coding challenges online. I was working a day job in childcare until I realized people would
+                    actually pay me to code! That's how I decided to become a Web Developer. Each time I write a new function to perform some
+                    task it's like I'm solving a brand new puzzle.</p>
+                </div>
+                <div class="followMe">
+                    <h6>Follow Me</h6>
+                    <nav>
+                        <a href="https://twitter.com/AmieEverett_" class="btnSqSmall" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            
+                        </a>
+                        <a href="https://www.linkedin.com/in/amie-everett-0573a0144/" class="btnSqSmall" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="http://www.bigcityimprovfestival.com/about/index.html" class="btnSqSmall" target="_blank">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <p class="copyright ">
+            © <span>Amie Everett</span> 2017 Design By Spark-Media. All Rights Reserved.
+        </p>
+        <a href="#home" class="backToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </footer>
 
 

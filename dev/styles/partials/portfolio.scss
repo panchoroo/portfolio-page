@@ -1,20 +1,29 @@
 /* portfolio styles */
 
-.project {
+.project, .blogPost {
     flex-shrink: 1;
+    margin: 15px;
     img {
         max-width: 100%;
         height: auto;
         
     }
-}
-
-.portfolio {
-    margin: 15px;
     &:first-child {
-        margin-left: none;
+        margin-left: 0;
     }
     &:last-child {
-        margin-right: none;
+        margin-right: 0;
+    }
+
+    button {
+        @include buttons(10px, 20px, $darkColor, $lightColor, $accentColor);
     }
 }
+
+.dark {
+    padding: 70px 0;
+    button {
+        @include buttons(10px, 20px, $darkColor, $accentColor, $accentColor);
+    }
+}
+

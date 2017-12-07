@@ -1,1 +1,30 @@
 /* contact styles */
+
+.contact img {
+    margin-top: 380px;
+    width: 100%;
+}
+
+.contact {
+    position: relative;
+    
+}
+
+.contactForm {
+    h3 {
+        margin-left: 23px;
+    }
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    // transform: translateY(50%);
+    padding: 100px;
+    background: white;
+    border: 1px solid black;
+    min-width: 600px;
+
+    input[type=submit] {
+        @include buttons(10px, 20px, $darkColor, $accentColor, lighten($darkColor, 60));
+    }
+}

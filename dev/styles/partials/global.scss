@@ -32,7 +32,7 @@ h1, h2, h4, h6 {
     text-align: center;
 }
 
-.headerRow, .home, .topAbout, .social, .skills, .hobbies, .portfolio, .blog,  .twoButtons{
+.headerRow, .home, .topAbout, .social, .skills, .hobbies, .portfolio, .blog,  .twoButtons, .footerInfo, .followMe {
     display: flex;
 }
 
@@ -45,6 +45,7 @@ h1, h2, h4, h6 {
     h2 {
         margin-bottom: 0px;
     }
+    margin-top: 120px;
     margin-left: 30px;
     span, h6 {
         color: $accentColor;
@@ -74,8 +75,8 @@ h1, h2, h4, h6 {
     }
 }
 ul {
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
