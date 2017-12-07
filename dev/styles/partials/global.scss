@@ -2,8 +2,94 @@
 
 $darkColor: black;
 $lightColor: white;
+$accentColor: rgb(255, 194, 0);
+
+$font1: "Roboto", sans-serif;
+$font2: "Raleway", sans-serif;
+// myriadpro?
+// LinearIcons
+
+// body {
+//     color: $darkColor;
+// }
+
+body {
+    font-family: $font2;
+}
+
+h1, h2, h4, h6 {
+    font-family: $font1;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
 
 .darkBackground {
     background: $darkColor;
     color: $lightColor;
+    text-align: center;
+}
+
+.headerRow, .home, .topAbout, .social, .skills, .hobbies, .portfolio, .blog,  .twoButtons{
+    display: flex;
+}
+
+.headerText, .contactForm, .aboutInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionHeader {
+    h2 {
+        margin-bottom: 0px;
+    }
+    margin-left: 30px;
+    span, h6 {
+        color: $accentColor;
+        margin:0;
+    }
+    &::before {
+        background: $accentColor;
+        left: -29%;
+        bottom: -36px;
+        content: "";
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 27%;
+    }
+    &::after {
+        background: $accentColor;
+        // left: -35px;
+        left: -26px;
+        bottom: 32px;
+        content: "";
+        display: block;
+        height: 15px;
+        width: 15px;
+        position: relative;
+        border-radius: 50%;
+    }
+}
+ul {
+    padding: none;
+    margin: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.twoButtons {
+    justify-content: center;
+}
+
+@mixin buttons ($topBottom, $leftRight, $color, $backgroundColor, $borderColor){
+    padding: $topBottom $leftRight;
+    background: $backgroundColor;
+    color: $color;
+    border: 2px solid $borderColor;
+    border-radius: 0;
 }

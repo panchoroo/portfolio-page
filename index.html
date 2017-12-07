@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
     <title>Amie Everett</title>
 </head>
 <body>
     
     <header>
-        <h4><span>A</span>mie</h4>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="headerRow wrapper">
+            <h4><span>A</span>mie</h4>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="home" class="home">
-        <img src="http://fillmurray.com/200/200" alt="A headshot of Amie Everett by Pam Lau">
-        <h1>I'm<br><span>Amie Everett</span></h1>
-        <h6>A Professional and Creative Web Developer</h6>
-        <button class="btnRect">About me</button>
+    <section id="home" class="">
+        <div class="wrapper home">
+            <img src="http://fillmurray.com/200/200" alt="A headshot of Amie Everett by Pam Lau">
+            <div class="heroText">
+                <h1>I'm<br><span>Amie Everett</span></h1>
+                <h6>A Professional and Creative Web Developer</h6>
+                <button class="btnRect">About me</button>
+            </div>
+        </div>
     </section>
     <!-- end hero -->
 
-    <section id="about" class="about">
-        <h2 class="sectionHeader">About <span>Me</span></h2>
-        <h6>Who am I?</h6>
-        <div class="wrapper topAbout">
+    <section id="about" class="about wrapper">
+        <div class="sectionHeader">
+            <h2>About <span>Me</span></h2>
+            <h6>Who am I?</h6>
+        </div>
+        <div class="topAbout">
             <div class="leftAbout">
                 <ul class="aboutInfo">
-                    <li>Full name <span>:Amie Everett</span></li>
+                    <li>Full name <span>:Amie Everett</span>
                     <li>Occupation <span>:Professional Web Developer</span></li>
                     <!-- <li>Phone <span></span>:647-339-8018</span></li> -->
-                    <li>Email <span></span>:amie@amieeverett.com</span></li>
-                    <li>Website <span></span>:amieeverett.com</span></li>
-                    <li><p>Hi I'm Amie and I like puzzles.  I taught myself Python and solved coding challenges I found on the internet as a hobby while I worked in childcare.  Then I realized people would actually pay me to code!</p></li>
+                    <li>Email <span>:amie@amieeverett.com</span></li>
+                    <li>Website <span>:amieeverett.com</span></li>
                 </ul>
+                <p>Hi! I'm Amie and I've always loved puzzles.  I taught myself to code for fun because it was just like solving a puzzle.  I started with Python and solved coding challenges online.  I was working a day job in childcare until I realized people would actually pay me to code!  That's how I decided to become a Web Developer.  Each time I write a new function to perform some task it's like I'm solving a brand new puzzle.</p>
                 <div class="twoButtons">
                     <button class="btnRect">Contact</button>
                     <button class="btnRect">Portfolio</button>
@@ -48,16 +59,28 @@
             </div>
             <div class="rightAbout">
                 <img src="http://fillmurray.com/300/300" alt="A headshot of Amie Everett by Pam Lau">
-                <ul class="social">
+                <nav class="social">
                     <!-- //font awesome icons here -->
-                    <li class="btnSqSmall">twitter</li>
-                </ul>
+                    <a href="https://twitter.com/AmieEverett_" class="btnSqSmall" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/amie-everett-0573a0144/" class="btnSqSmall" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="http://www.bigcityimprovfestival.com/about/index.html" class="btnSqSmall" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+                </nav>
             </div>
         </div>
         <div class="wrapper bottomAbout">
-            <h3>Skills</h3>
+            <h3 class="skillsHeader">Skills</h3>
             <ul class="skills">
-                <li class="skill">javascript</li>
+                <li class="skill"><i class="devicon-python-plain"></i></li>
+                <li class="skill"><i class="devicon-javascript-plain"></i></li>
+                <li class="skill"><i class="devicon-react-plain"></i></li>
+                <li class="skill"><i class="devicon-github-plain"></i></li>
+                <li class="skill"><i class="devicon-sass-plain"></i></li>
+                <li class="skill"><i class="devicon-gulp-plain"></i></li>
+                <li class="skill"><i class="devicon-bootstrap-plain"></i></li>
+                <li class="skill"><i class="devicon-visualstudio-plain"></i></li>
+                <li class="skill"><i class="devicon-html5-plain"></i></li>
+                <li class="skill"><i class="devicon-gimp-plain"></i></li>
+                <li class="skill"><i class="devicon-css3-plain"></i></li>
             </ul>
         </div>
     </section>
@@ -65,17 +88,26 @@
 
     <section class="hobbies darkBackground">
         <ul class="hobbies wrapper">
-            <li class="hobby">hockey</li>
+            <!-- <li class="hobby"><span class="lnr lnr-bicycle"></span></li> -->
+            <li class="hobby">🏒 hockey</li>
+            <li class="hobby">🎭 improv</li>
+            <li class="hobby">🎲 board games</li>
+            <li class="hobby">🗝 escape rooms</li>
+            <li class="hobby">🚲 cycling</li>
             <!-- font awesome -->
         </ul>
     </section>
     <!-- end hobbies -->
 
-    <section id="porfolio" class="porfolio">
-        <h2 class="sectionHeader">My<span>Portfolio</span></h2>
-        <h6>Latest Work</h6>
+    <section id="porfolio" class=" wrapper">
+        <div class="sectionHeader">
+            <h2>My
+                <span>Portfolio</span>
+            </h2>
+            <h6>Latest Work</h6>
+        </div>
         <!-- ul? nav? sort/filter or whatev tags TAGS-->
-        <div class="wrapper">
+        <div class="">
             <ul class="portfolio">
                 <li class="project">
                     <img src="http://fillmurray.com/270/300" alt="">
@@ -129,34 +161,35 @@
     </section>
     <!-- end dark -->
 
-    <section id="blog" class="blog">
-        <h2 class="sectionHeader">Latest
-            <span>News</span>
-        </h2>
-        <h6>My Blog Posts</h6>
-
-        <div class="wrapper">
+    <section id="blog" class=" wrapper">
+        <div class="sectionHeader">
+            <h2>Latest
+                <span>News</span>
+            </h2>
+            <h6>My Blog</h6>
+        </div>
+        <div class="">
             <ul class="blog">
                 <li class="blogPost">
                     <img src="http://fillmurray.com/350/350" alt="">
                     <h6 class="tag">date absolute</h6>
                     <h6>Recursion for Dummies</h6>
                     <p>Have you ever wanted to learn about recursion?</p>
-                    <button class="btnRect">Read More</button>]
+                    <button class="btnRect">Read More</button>
                 </li>
                 <li class="blogPost">
                     <img src="http://fillmurray.com/350/350" alt="">
                     <h6 class="tag">date absolute</h6>
                     <h6>Recursion for Dummies</h6>
                     <p>Have you ever wanted to learn about recursion?</p>
-                    <button class="btnRect">Read More</button>]
+                    <button class="btnRect">Read More</button>
                 </li>
                 <li class="blogPost">
                     <img src="http://fillmurray.com/350/350" alt="">
                     <h6 class="tag">date absolute</h6>
                     <h6>Recursion for Dummies</h6>
                     <p>Have you ever wanted to learn about recursion?</p>
-                    <button class="btnRect">Read More</button>]
+                    <button class="btnRect">Read More</button>
                 </li>
             </ul>
             <!-- button ?  -->
@@ -165,21 +198,29 @@
     <!-- end blog -->
 
     <section class="dark darkBackground">
-        <h1>what clients say with flickity?</h1>
+        <h1>Testimonials with flickity?</h1>
     </section>
     <!-- end dark -->
 
     <section id="contact" class="contact">
-        <h2 class="sectionHeader">Contact
-            <span>Me</span>
-        </h2>
-        <h6>My Contact Info</h6>
+        <div class="wrapper">
+            <div class="sectionHeader">
+                <h2>Contact
+                    <span>Me</span>
+                </h2>
+                <h6>My Contact Info</h6>
+            </div>
+            <form class="contactForm" action="https://formspree.io/amie@amieeverett.com" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="text" name="subject">
+                <input type="textarea" name="message">
+                <input type="submit" value="Send">
+                <!-- Get in touch? or in footer? -->
+            </form>
+        </div>
+        <img src="http://fillmurray.com/800/500" alt="">
         <!-- map iform? -->
-        <!-- form spree? -->
-        <!-- Contact Me! -->
-        <!-- name, email, subject, message -->
-        <!-- button submit -->
-        <!-- Get in touch -->
     </section>
     <!-- end contact -->
 
@@ -189,7 +230,7 @@
 
 
     
-
+    <script src="https://use.fontawesome.com/863f28bd20.js"></script>
     <script src="/public/scripts/app.js"></script>
 </body>
 </html>

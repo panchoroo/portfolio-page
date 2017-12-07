@@ -1,0 +1,20 @@
+/* portfolio styles */
+
+.project {
+    flex-shrink: 1;
+    img {
+        max-width: 100%;
+        height: auto;
+        
+    }
+}
+
+.portfolio {
+    margin: 15px;
+    &:first-child {
+        margin-left: none;
+    }
+    &:last-child {
+        margin-right: none;
+    }
+}
