@@ -32,11 +32,11 @@ h1, h2, h4, h6 {
     text-align: center;
 }
 
-.headerRow, .home, .topAbout, .social, .skills, .hobbies, .portfolio, .blog,  .twoButtons, .footerInfo, .followMe {
+.headerRow, .home, .topAbout, .social, .skills, .hobbiesList, .portfolio, .blog,  .twoButtons, .footerInfo, .followMe, .tags {
     display: flex;
 }
 
-.headerText, .contactForm, .aboutInfo {
+.headerText, .contactForm, .aboutInfo, .heroImg, .skill, .hobbies, .projectText {
     display: flex;
     flex-direction: column;
 }
@@ -93,4 +93,11 @@ li {
     color: $color;
     border: 2px solid $borderColor;
     border-radius: 0;
+}
+
+@mixin hover ($hoverBckColor, $hoverTxtColor, $hoverBrdrColor, $seconds) {
+    background: $hoverBckColor;
+    color: $hoverTxtColor;
+    border-color: $hoverBrdrColor;
+    transition: $seconds;
 }

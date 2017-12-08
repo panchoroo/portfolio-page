@@ -26,5 +26,8 @@
 
     input[type=submit] {
         @include buttons(10px, 20px, $darkColor, $accentColor, lighten($darkColor, 60));
+        &:hover {
+            @include hover($lightColor, $darkColor, $accentColor, 1s);
+        }
     }
 }

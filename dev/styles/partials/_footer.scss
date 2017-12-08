@@ -52,7 +52,10 @@ footer {
 }
 
 .backToTop {
-    @include buttons(5px, 5px, $darkColor, $accentColor, $accentColor);
+    @include buttons(5px, 5px, $darkColor, $accentColor, lighten($darkColor, 40));
+    &:hover {
+            @include hover($lightColor, $darkColor, $accentColor, 1s);
+        }
     margin: 5px;
     position: fixed;
     bottom: 10px;

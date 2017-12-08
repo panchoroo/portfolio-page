@@ -1,0 +1,105 @@
+/* portfolio styles */
+
+.portfolio, .blog {
+    flex-wrap: wrap;
+}
+
+.project, .blogPost {
+    flex-shrink: 1;
+    margin: 15px;
+    flex-wrap: wrap;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+
+    h5 {
+        margin-bottom: 10px;
+        font-family: $font2;
+        
+    }
+    p{
+        margin-top: 0;
+        font-family: $font1;
+
+    }
+
+
+    button {
+        @include buttons(6px, 15px, $darkColor, $lightColor, $accentColor);
+        &:hover {
+            @include hover($accentColor, $darkColor, $accentColor, 1s);
+        }
+    }
+}
+
+li.project {
+    width: calc(25% - 22.5px);
+    min-height: 500px;
+    justify-content: space-between;
+    .twoButtons {
+        // justify-self: flex-end;
+        a {
+            margin-right: 5px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.dark {
+    padding: 70px 0;
+    button {
+        @include buttons(12px, 30px, $darkColor, $accentColor, $accentColor);
+        &:hover {
+            @include hover($lightColor, $darkColor, $accentColor, 1s);
+        }
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.tags {
+    // justify-content: space-between;
+    h6 {
+        margin: 0;
+    }
+}
+.tag {
+    span {
+        margin-left: 5px;
+        margin-right: 15px;
+        color: $accentColor;
+    }
+    font-style: italic;
+}
+
+.projectText {
+    justify-self: stretch;
+}
+
+// weird css grid thing maybe?
+// .portfolio :nth-child(2) {
+//     // display: inline-block;
+//     display: flex;
+//     flex-direction: row;
+//     width: 62%;
+//     // flex-grow: 2;
+//     .projectText {
+//         display: flex;
+//         flex-direction: column;
+//         height: 360px;
+//     }
+// }
+
+

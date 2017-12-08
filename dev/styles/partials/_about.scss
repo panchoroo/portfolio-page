@@ -1,0 +1,164 @@
+/* about styles */
+
+.leftAbout, .rightAbout {
+    img {
+        margin: 0 auto;
+        // justify-self: center;
+        align-self: center;
+        // color: $accentColor;
+        border: 10px solid $accentColor;
+        width: 100%;
+    }
+    p {
+        margin: 20px 75px 20px 0;
+    }
+}
+
+.leftAbout {
+    width: 66.66%;
+    padding-left: 55px;
+    div.twoButtons {
+        justify-content: space-around;
+        width: 80%
+    }
+    button {
+        @include buttons(12px, 30px, $darkColor, $lightColor, $accentColor);
+        // width: 100%;
+        a {
+            text-decoration: none;
+            color: $darkColor;
+            
+        }
+        &:hover {
+            @include hover($accentColor, $darkColor, $accentColor, 1s);
+        }
+    }
+}
+
+.aboutInfo, .aboutInfoFooter {
+    padding-left: 0px;
+    li {
+        display: flex;
+        justify-content: space-between;
+        // width: 25%;
+        width: 66%;
+        font-weight: 700;
+    }
+    span {
+        // margin-left: 20px;
+        justify-self: flex-start;
+        // width: 5%;
+        width: 66%;
+        color: lighten($darkColor, 40);
+        font-weight: 400;
+    }
+    
+}
+
+.rightAbout {
+    width: 33.33%;
+    nav {
+        justify-content: center;
+    }
+    a {
+        @include buttons(6px, 7px, $darkColor, $lightColor, $accentColor);
+        margin: 5px;
+        &:first-child() {
+            padding: 6px 8.1px;
+        }
+        &:nth-child(2) {
+            padding: 6px 9px;
+        }
+        &:hover {
+            @include hover($accentColor, $darkColor, $accentColor, 1s);
+        }
+    }
+}
+
+.skillsHeader {
+    margin-left: 55px;
+}
+
+.skills {
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+    min-height: 300px;
+    justify-content: space-around; 
+}
+
+h3 {
+    &::after {
+        background: $accentColor;
+        left: -26px;
+        bottom: 18px;
+        content: "";
+        display: block;
+        height: 15px;
+        width: 15px;
+        position: relative;
+        border-radius: 50%;
+    }
+}
+
+.skill { 
+    // margin: 0 83px;
+    // margin: 0 50px;
+    align-items: center;
+    width: 20%;
+    i {
+        // margin: 0 auto;
+        font-size: 3rem;
+        max-height: 82px;
+        box-shadow: 2px 2px 24px lighten($darkColor, 50);
+        @include buttons(15px, 15px, $darkColor, $lightColor, $lightColor);
+        &:hover {
+            @include hover($accentColor, $darkColor, $accentColor, 1s);
+            cursor: pointer;
+        }
+    }
+    h6 {
+        margin-top: 18px;
+    }
+}
+
+.hobbies {
+    padding: 0 0 70px 0;
+    h3 {
+        padding: 35px 0 0 0;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        li {
+            border: 1px solid darken($lightColor, 30);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            margin: 5px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:nth-child(3), &:nth-child(4) {
+                padding: 15px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+    h6 {
+        text-transform: uppercase;
+        margin: 5px 0;
+    }
+    i {
+        color: $accentColor;
+        font-size: 2rem;
+    }
+}
