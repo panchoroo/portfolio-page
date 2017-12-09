@@ -1,8 +1,6 @@
 /* home styles */
 
-
 .headerRow {
-    // color: $accentColor;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -16,7 +14,6 @@
         border-radius: 50%;
         padding: 0 5px;
         margin-right: 2px;
-        // font-weight: 700;
     }
     nav a {
         text-decoration: none;
@@ -35,18 +32,15 @@
 
 .home {
     width: 100%;
-    // height: 500px;
     height: calc(100vh - 100px);
     transform: translateY(-10px);
     justify-content: flex-start;
     align-items: center;
     img.portrait {
-        // -webkit-clip-path: circle(50% at 50% 50%);
-        // clip-path: circle(50% at 50% 50%);
-        border: 5px solid $darkColor;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        border: 5px solid lighten($darkColor, 30);
         width: 100%;
-        // height:100%;
-        // width: auto;
         border-radius:50%
     }
     img.shadow{
@@ -58,6 +52,9 @@
     }
     button {
         @include buttons(12px, 30px, $lightColor, $darkColor, $darkColor);
+        &:hover {
+            @include hover($lightColor, $darkColor, $darkColor, 1s);
+        }
     }
 }
 

@@ -2,16 +2,20 @@
 
 $darkColor: black;
 $lightColor: white;
-$accentColor: rgb(255, 194, 0);
+// $accentColor: rgb(255, 194, 0);
+$accentColor: #8EDCE6;
+// $accentColor: #241023;
+// $accentColor: #22223B;
+// $accentColor: #BBBE64;
+// $accentColor: #143109;
+// $accentColor: #083D77;
+// $accentColor: #DD6E42;
+// $accentColor: #52489C;
+// $accentColor: #F2FF49;
 
 $font1: "Roboto", sans-serif;
 $font2: "Raleway", sans-serif;
 // myriadpro?
-// LinearIcons
-
-// body {
-//     color: $darkColor;
-// }
 
 body {
     font-family: $font2;
@@ -32,11 +36,11 @@ h1, h2, h4, h6 {
     text-align: center;
 }
 
-.headerRow, .home, .topAbout, .social, .skills, .hobbiesList, .portfolio, .blog,  .twoButtons, .footerInfo, .followMe, .tags {
+.headerRow, .home, .topAbout, .social, .skills, .hobbiesList, .portfolio, .blog,   .twoButtons, .footerInfo, .followMe, .tags {
     display: flex;
 }
 
-.headerText, .contactForm, .aboutInfo, .heroImg, .skill, .hobbies, .projectText {
+.headerText, .contactForm, .aboutInfo, .heroImg, .skill, .hobbies, .projectText  {
     display: flex;
     flex-direction: column;
 }
@@ -74,6 +78,7 @@ h1, h2, h4, h6 {
         border-radius: 50%;
     }
 }
+
 ul {
     padding: 0;
     margin: 0;

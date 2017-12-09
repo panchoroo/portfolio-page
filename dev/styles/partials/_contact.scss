@@ -1,13 +1,22 @@
 /* contact styles */
 
-.contact img {
+.contact iframe {
     margin-top: 380px;
     width: 100%;
+    height: 760px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+.place-card, .profile-photo, .gm-inset {
+    display: none;
 }
 
 .contact {
     position: relative;
-    
 }
 
 .contactForm {
@@ -15,19 +24,26 @@
         margin-left: 23px;
     }
     position: absolute;
-    top: 200px;
+    z-index: 2;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    // transform: translateY(50%);
+    transform: translate(-50%, -50%);
     padding: 100px;
-    background: white;
-    border: 1px solid black;
+    // background: #ffffffe6;
+    background: $lightColor;
+    box-shadow: 2px 2px 24px lighten($darkColor, 50);
     min-width: 600px;
 
     input[type=submit] {
+        margin-top: 15px;
         @include buttons(10px, 20px, $darkColor, $accentColor, lighten($darkColor, 60));
         &:hover {
             @include hover($lightColor, $darkColor, $accentColor, 1s);
         }
     }
+    label {
+        margin: 15px 0 5px 0;
+    }
 }
+
+

@@ -3,12 +3,11 @@
 .leftAbout, .rightAbout {
     img {
         margin: 0 auto;
-        // justify-self: center;
         align-self: center;
-        // color: $accentColor;
         border: 10px solid $accentColor;
         width: 100%;
     }
+
     p {
         margin: 20px 75px 20px 0;
     }
@@ -23,12 +22,11 @@
     }
     button {
         @include buttons(12px, 30px, $darkColor, $lightColor, $accentColor);
-        // width: 100%;
         a {
             text-decoration: none;
             color: $darkColor;
-            
         }
+
         &:hover {
             @include hover($accentColor, $darkColor, $accentColor, 1s);
         }
@@ -40,31 +38,29 @@
     li {
         display: flex;
         justify-content: space-between;
-        // width: 25%;
         width: 66%;
         font-weight: 700;
+        line-height: 2;
     }
     span {
-        // margin-left: 20px;
         justify-self: flex-start;
-        // width: 5%;
         width: 66%;
         color: lighten($darkColor, 40);
         font-weight: 400;
     }
-    
 }
 
-.rightAbout {
-    width: 33.33%;
+.rightAbout, .followMe {
+    
     nav {
         justify-content: center;
     }
     a {
-        @include buttons(6px, 7px, $darkColor, $lightColor, $accentColor);
+        @include buttons(6px, 7.8px, $darkColor, $lightColor, $accentColor);
         margin: 5px;
-        &:first-child() {
-            padding: 6px 8.1px;
+        &:first-child {
+            padding: 6.3px 8.2px;
+            // background: yellow;
         }
         &:nth-child(2) {
             padding: 6px 9px;
@@ -73,6 +69,10 @@
             @include hover($accentColor, $darkColor, $accentColor, 1s);
         }
     }
+}
+
+.rightAbout {
+    width: 33.33%;
 }
 
 .skillsHeader {
@@ -101,20 +101,13 @@ h3 {
 }
 
 .skill { 
-    // margin: 0 83px;
-    // margin: 0 50px;
     align-items: center;
     width: 20%;
     i {
-        // margin: 0 auto;
         font-size: 3rem;
         max-height: 82px;
         box-shadow: 2px 2px 24px lighten($darkColor, 50);
         @include buttons(15px, 15px, $darkColor, $lightColor, $lightColor);
-        &:hover {
-            @include hover($accentColor, $darkColor, $accentColor, 1s);
-            cursor: pointer;
-        }
     }
     h6 {
         margin-top: 18px;
