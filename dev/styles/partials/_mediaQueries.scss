@@ -1,2 +1,282 @@
 /* media query styles */
 
+@media (max-width: 1000px) {
+    .wrapper {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 850px) {
+    .headerRow, .bottomAbout, .hobbiesList,   {
+        max-width: 500px;
+    }
+    .project, .blogPost {
+        width: calc(50% - 30px);
+        margin: 15px;
+        &:first-child {
+            margin-left: 15px;
+        }
+        &:last-child {
+            margin-right: 15px;
+        }
+    }
+    ul.portfolio, ul.blog {
+        margin: 50px 6% 70px 6%;
+    } 
+    
+    .footerInfo {
+        margin: 15px;
+        .contactMe {
+            width: 75%;
+            margin-bottom: 50px;
+            ul li:last-child {
+                display: none;
+            }
+        }
+        .followMe h6{
+            margin-top: 70px;
+        }
+    }
+    .aboutMe {
+        display: none;
+    }
+    .heroImg {
+        margin: 0 20px;
+    }
+    .home {
+        justify-content: space-around;
+    }
+    .topAbout {
+        justify-content: center;
+    }
+    .leftAbout {
+        max-width: 500px;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 70px;
+        p {
+            margin-right: 5px;
+        }
+    }
+    .rightAbout {
+        width: 6%;
+        img {
+            display: none;
+        }
+        hav.social {
+            flex-direction: column;
+        }
+    }
+    .sectionHeader {
+        margin-left: 50px;
+        &::before {
+            display: none;
+        }
+    }
+    .about .skillsHeader {
+        margin-left:0;
+    }
+    .hobbies ul li {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 715px) {
+    .footerInfo {
+        flex-direction: column;
+        margin: 0 50px;
+        .contactMe, .followMe {
+            width: 100%;
+        }
+    }
+    .footerRight {
+        width: 100%;
+        margin-right: 20px;
+    }
+    .footerInfo .contactMe {
+        width: 100%;
+        margin-bottom: 0;
+        li>span {
+            text-align: right;  
+        }
+        li {
+            width: 100%;
+        }
+    }
+    footer .followMe {
+        margin-top: 0;
+        width: 99%;
+    }
+    .copyright {
+        padding: 10px 50px 10px 10px;
+    } 
+}
+@media (max-width: 650px) {
+    .heroImg {
+        display: none;
+    }
+    .topAbout {
+        flex-direction: column;
+        justify-content: center;
+        .rightAbout {
+            width: 100%;
+            nav {
+                justify-content: flex-end;
+            }
+        }
+        img {
+            display: block;
+        }
+        .leftAbout {
+            margin-left: 20px;
+            order: 2;
+        }      
+    }
+    
+    iframe {
+        display: none;
+        
+    }
+    .contact .wrapper .contactForm {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        min-width: 100%;
+        padding: 5%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        box-shadow: 0 0 0 white;
+        h3 {
+            display: none;
+        }
+    }
+    .hobbiesList {
+        flex-wrap: wrap;
+        li{
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .about .skillsHeader {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 530px) {
+    .headerRow {
+        nav {
+            display: flex;
+            flex-direction: column;
+            top: 50px;
+            right: -100%;
+            position: fixed;
+            z-index: 4;
+            border: 2px solid lighten($darkColor, 40);
+            transition: 1s;
+        }
+        h4 {
+            margin-left: 50px;
+        }
+        input#toggle:checked {
+            background: yellow;
+            right: 50px;
+        }
+
+        input#toggle:checked+nav {
+            right: 15px;  
+            box-shadow: 2px 2px 24px lighten($darkColor, 50);
+            &:hover {
+                @include hover($lightColor, $darkColor, $accentColor, 1s);
+            } 
+        }
+
+        label[for="toggle"] {
+            display: block;
+            position: fixed;
+            z-index: 4;
+            top: 15px;
+            right: 15px;
+
+            @include buttons(5px, 8px, $darkColor, $accentColor, lighten($darkColor, 40));
+            &:hover {
+                @include hover($lightColor, $darkColor, $accentColor, 1s);
+                cursor: pointer;
+            } 
+        }
+    }
+    .skill {
+        width: 33.33%;
+    }
+    .hobbiesList {
+        justify-content: space-around;
+    }
+    .hobbies .hobbiesList li {
+        margin: 2% 4%;
+        justify-content: space-around;
+        &:last-child, &:first-child {
+            margin: 2% 4%;
+        }
+    }
+
+    .portfolio li, .blog li {
+        width: 100%;
+    }
+    .blog img {
+        width: 100%;
+    }
+    .leftAbout {
+        margin: 20px 20px 70px 20px;
+        width: 90%;
+        div.twoButtons {
+            // margin-right:0;
+            width: 100%;
+            // justify-content: space-around;
+            // background: yellow;
+        }
+    }
+    .aboutInfo li {
+        width: 100%;
+    }
+
+}
+
+// @media (max-width: 400px) {
+//     .footerInfo.wrapper{
+//         // .contactMe .followMe {
+//         //     margin: 0;
+//         // }
+//         margin: 0 40px;
+//     }
+//     footer .followMe {
+//         flex-direction: column;
+//     }
+// }
+
+@media (max-width: 430px) {
+    .heroText {
+        margin: 50px;
+    }
+    .footerInfo.wrapper{
+        // .contactMe .followMe {
+        //     margin: 0;
+        // }
+        margin: 0 40px;
+    }
+    footer .followMe {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    .leftAbout div.twoButtons {
+        flex-direction: column;
+        button {
+            margin-bottom: 5px;
+        }
+    }
+}

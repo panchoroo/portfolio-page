@@ -23,6 +23,20 @@
             @include hover($lightColor, $accentColor, $lightColor, 1s);
         }
     }
+    .hamburger {
+        @include buttons(5px, 5px, $darkColor, $accentColor, lighten($darkColor, 40));
+        &:hover {
+            @include hover($lightColor, $darkColor, $accentColor, 1s);
+        } 
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+    input#toggle, label[for="toggle"]{
+        display: none;
+    }
+        
+    
 }
 
 #home {
@@ -37,8 +51,8 @@
     justify-content: flex-start;
     align-items: center;
     img.portrait {
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        // -webkit-clip-path: circle(50% at 50% 50%);
+        // clip-path: circle(50% at 50% 50%);
         border: 5px solid lighten($darkColor, 30);
         width: 100%;
         border-radius:50%
