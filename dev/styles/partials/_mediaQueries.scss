@@ -178,6 +178,9 @@
             z-index: 4;
             border: 2px solid lighten($darkColor, 40);
             transition: 1s;
+            a {
+                padding: 20px 10px;
+            }
         }
         h4 {
             margin-left: 50px;
@@ -270,6 +273,11 @@
     footer .followMe {
         flex-direction: column;
     }
+    .aboutInfoFooter li:nth-child(3) {
+        span {
+            width: 75%; 
+        }    
+    }
 }
 
 @media (max-width: 350px) {
@@ -278,5 +286,18 @@
         button {
             margin-bottom: 5px;
         }
+    }
+}
+
+@media (max-height: 400px) {
+    #home {
+        min-height: calc(100vh);
+    }
+    .home,  .heroText{
+        height: calc(100vh - 100px);
+    }
+    .rightAbout img {
+        max-height: 400px;
+        width: auto;
     }
 }
