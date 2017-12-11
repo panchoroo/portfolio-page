@@ -185,17 +185,19 @@
         h4 {
             margin-left: 50px;
         }
-        input#toggle:checked {
-            right: 50px;
-        }
+        // input#toggle:checked {
+        //     right: 50px;
+        // }
 
-        input#toggle:checked+nav {
-            right: 15px;  
+        .headerRow nav {
             box-shadow: 2px 2px 24px lighten($darkColor, 50);
             &:hover {
                 @include hover($lightColor, $darkColor, $accentColor, 1s);
             } 
         }
+        // input#toggle:checked+nav {
+        //     right: 15px;  
+        // }
 
         label[for="toggle"] {
             display: block;
@@ -240,6 +242,13 @@
     }
     .aboutInfo li {
         width: 100%;
+    }
+    // #topNav.hidden {
+    // input#toggle:checked+nav {
+    //     right: -100%;
+    // }
+    #topNav.unHide {
+        right: 15px;
     }
 
 }
