@@ -243,14 +243,10 @@
     .aboutInfo li {
         width: 100%;
     }
-    // #topNav.hidden {
-    // input#toggle:checked+nav {
-    //     right: -100%;
-    // }
+
     #topNav.unHide {
         right: 15px;
     }
-
 }
 
 @media (max-width: 430px) {
