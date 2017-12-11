@@ -9,7 +9,6 @@
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-
 }
 .place-card, .profile-photo, .gm-inset {
     display: none;
@@ -29,7 +28,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 100px;
-    // background: #ffffffe6;
     background: $lightColor;
     box-shadow: 2px 2px 24px lighten($darkColor, 50);
     min-width: 600px;

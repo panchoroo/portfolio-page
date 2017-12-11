@@ -172,7 +172,7 @@
         nav {
             display: flex;
             flex-direction: column;
-            top: 50px;
+            top: 55px;
             right: -100%;
             position: fixed;
             z-index: 4;
@@ -186,7 +186,6 @@
             margin-left: 50px;
         }
         input#toggle:checked {
-            background: yellow;
             right: 50px;
         }
 
@@ -236,10 +235,7 @@
         margin: 20px 20px 70px 20px;
         width: 90%;
         div.twoButtons {
-            // margin-right:0;
             width: 100%;
-            // justify-content: space-around;
-            // background: yellow;
         }
     }
     .aboutInfo li {
@@ -248,26 +244,11 @@
 
 }
 
-// @media (max-width: 400px) {
-//     .footerInfo.wrapper{
-//         // .contactMe .followMe {
-//         //     margin: 0;
-//         // }
-//         margin: 0 40px;
-//     }
-//     footer .followMe {
-//         flex-direction: column;
-//     }
-// }
-
 @media (max-width: 430px) {
     .heroText {
         margin: 50px;
     }
     .footerInfo.wrapper{
-        // .contactMe .followMe {
-        //     margin: 0;
-        // }
         margin: 0 40px;
     }
     footer .followMe {

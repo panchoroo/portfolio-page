@@ -9,12 +9,6 @@ footer {
     .aboutInfoFooter li{
         width: 90%;
         text-align: left;
-        // &:nth-child(3) {
-        //     span {
-        //         width: 75%; 
-        //     }    
-        // }
-        
     }
 
     h6 {
@@ -58,9 +52,6 @@ footer {
         a {
             color: $lightColor;
             background: $darkColor;
-            // &:last-child {
-            //     visibility: hidden;
-            // }
         }
         margin-bottom: 70px;
     }
