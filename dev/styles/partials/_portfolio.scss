@@ -3,29 +3,24 @@
 .portfolio, .blog {
     flex-wrap: wrap;
 }
+.portfolio {
+    justify-content: space-around;
+    margin: 15px 15px 115px 15px;
+}
 
 .project, .blogPost {
-    flex-shrink: 1;
-    margin: 15px;
+    // flex-shrink: 1;
     flex-wrap: wrap;
-
     img {
         max-width: 100%;
         height: auto;
         box-shadow: 2px 2px 24px lighten($darkColor, 50);
     }
 
-    &:first-child {
-        margin-left: 0;
-    }
-
-    &:last-child {
-        margin-right: 0;
-    }
-
     h5 {
         margin: 10px 0;
         font-family: $font2;
+        font-size: 1.2rem;
     }
 
     p {
@@ -42,8 +37,10 @@
 }
 
 .project {
-    width: calc(25% - 22.5px);
-    min-height: 500px;
+    margin: 60px 0;
+    // width: calc(33% - 22.5px);
+    width: calc(33.33% - 30px);
+    // min-height: 500px;
     justify-content: space-between;
     .twoButtons {
         justify-content: space-between;
@@ -89,8 +86,15 @@
     font-style: italic;
 }
 
-.projectText {
-    justify-self: stretch;
+// .projectText {
+//     justify-self: stretch;
+// }
+
+.projectInfo {
+    justify-content: space-between;
+    p {
+        min-height: 135px;
+    }
 }
 
 

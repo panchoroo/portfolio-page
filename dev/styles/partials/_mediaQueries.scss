@@ -12,13 +12,13 @@
     }
     .project, .blogPost {
         width: calc(50% - 30px);
-        margin: 15px;
-        &:first-child {
-            margin-left: 15px;
-        }
-        &:last-child {
-            margin-right: 15px;
-        }
+        // margin: 15px 15px 35px 15px;
+        // &:first-child {
+        //     margin-left: 15px;
+        // }
+        // &:last-child {
+        //     margin-right: 15px;
+        // }
     }
     ul.portfolio, ul.blog {
         margin: 50px 6% 70px 6%;
@@ -79,6 +79,9 @@
     .hobbies ul li {
         height: 90px;
         width: 90px;
+    }
+    .skills i {
+        box-shadow: 2px 2px 4px lighten($darkColor, 50);
     }
 }
 
@@ -164,6 +167,10 @@
 @media (max-width: 580px) {
     .about .skillsHeader {
         margin-left: 35px;
+    }
+    #home {
+        background: $accentColor;
+        background-attachment: unset;
     }
 }
 

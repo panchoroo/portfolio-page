@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
@@ -12,12 +13,12 @@
 <body>
     
     <header>
-        <div class="headerRow wrapper">
+        <div class="headerRow wrapper" id="top">
             <h4><span>A</span>mie.</h4>
             <label for="toggle"><i class="fa fa-bars"></i></label>
             <input type="checkbox" id="toggle" name="toggle" class="hamburger">
             <nav id="topNav">
-                <a href="#home">Home</a>
+                <a href="#top">Home</a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#blog">Blog</a>
@@ -54,10 +55,12 @@
                     <li>Email <span>:amie@amieeverett.com</span></li>
                     <li>Website <span>:amieeverett.com</span></li>
                 </ul>
-                <p>Hi! I'm Amie and I've always loved puzzles.  I taught myself to code because it was just like solving a puzzle.  I started with Python and solved coding challenges online.  I was working a day job in childcare until I realized people would actually pay me to code!  That's how I decided to become a Web Developer.  Each time I write a new function it's like I'm solving a brand new puzzle.</p>
+                <p>Hi! I'm Amie and I've always loved puzzles. I taught myself Java to solve Project Euler problems. As much as I like solving
+                complex math problems, I also like making things look pretty. That’s why I decided to focus on Web Development. I can create
+                a beautiful, clean website that works. And each time I write a new function it's like I'm solving a brand new puzzle.</p>
                 <div class="twoButtons">
-                    <button class="btnRect"><a href="#contact">Contact Me</a></button>
-                    <button class="btnRect"><a href="#portfolio">My Portfolio</a></button>
+                    <a href="#contact"><button class="btnRect">Contact Me</button></a>
+                    <a href="#portfolio"><button class="btnRect">My Portfolio</button></a>
                     
                 </div>
             </div>
@@ -79,7 +82,7 @@
                 </li>
                 <li class="skill">
                     <i class="devicon-javascript-plain"></i>
-                    <h6>Javascrip</h6>
+                    <h6>Javascript</h6>
                 </li>
                 <li class="skill">
                     <i class="devicon-react-plain"></i>
@@ -118,6 +121,195 @@
     </section>
     <!-- end about -->
 
+    <!-- <section class="hobbies darkBackground">
+        <h3 class="skillsHeader wrapper">My Hobbies</h3>
+        <ul class="wrapper hobbiesList">
+            <li>
+                <i class="fa fa-trophy"></i>
+                <h6>hockey</h6>
+            </li>
+            <li>
+                <i class="fa fa-smile-o"></i>
+                <h6>improv</h6>
+            </li>
+            <li>
+                <i class="fa fa-puzzle-piece"></i>
+                <h6>board games</h6>
+            </li>
+            <li>
+                <i class="fa fa-key"></i>
+                <h6>escape rooms</h6>
+            </li>
+            <li>
+                <i class="fa fa-bicycle"></i>
+                <h6>cycling</h6>
+            </li>
+        </ul>
+    </section> -->
+    <!-- end hobbies -->
+
+    <section class="dark darkBackground">
+        <h2>Want To Learn More?</h2>
+        <a href="#contact">
+            <button class="btnRect">Contact Me</button>
+        </a>
+    </section>
+
+    <section id="portfolio" class=" wrapper">
+        <div class="sectionHeader">
+            <h2>My
+                <span>Portfolio</span>
+            </h2>
+            <h6>Latest Work</h6>
+        </div>
+        <div class="">
+            <ul class="portfolio">
+                <!--  wine project -->
+                <li class="project">
+                    <img src="../public/images/wine_project.jpg" alt="">
+                    <div class="tags">
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>React</span>
+                        </h6>
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Firebase</span>
+                        </h6>
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>API</span>
+                        </h6>
+                    </div>
+                    <h5>Tasting Notes</h5>
+                    <div class="projectInfo">
+                        <p>Login with email, then search the LCBO API to find a wine of your choice. Add it to your pantry and add your own rating
+                            and tasting notes.</p>
+                        <div class="twoButtons">
+                            <a href="https://lcbo-agency.firebaseapp.com/" target="_blank">
+                                <button class="btnRect">Web</button>
+                            </a>
+                            <a href="https://github.com/lcbo-team/lcbo-agency" target="_blank">
+                                <button class="btnRect">Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>  
+                <!-- end wine project -->
+
+                <!-- grocery app project -->
+                <li class="project">
+                    <img src="../public/images/grocery_project.jpg" alt="">
+                    <div class="tags">
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>React</span>
+                        </h6>
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Firebase</span>
+                        </h6>
+                    </div>
+                    <h5>Grocery App</h5>
+                    <div class="projectInfo">
+                        <p>A grocery app that keeps track of what's in your pantry and automatically adds it to your shopping list when it's running low.  All the items in your pantry are stored with Firebase.</p>
+                        <div class="twoButtons">
+                            <a href="http://amieeverett.com/amie_everett_project5/index.html" target="_blank">
+                                <button class="btnRect">Web</button>
+                            </a>
+                            <a href="https://github.com/panchoroo/groceryApp" target="_blank">
+                                <button class="btnRect">Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- end grocery app project -->
+                
+                <!-- bee game project -->
+                <li class="project">
+                    <img src="../public/images/bee_game.gif" alt="Screenshot of bee game with friendly bee, flowers, and wasps as bad guys">
+                    <div class="tags">
+                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i><span>Javascript</span></h6>
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>jQuery</span>
+                        </h6>
+                    </div>
+                    <div class="projectInfo">
+                        <h5>Bee Game</h5>
+                        <p>Use your cursor to move the bee and pollinate flowers by clicking on them.  Multiple levels with increasing difficulty.  Avoid hovering over the enemy wasps or you'll lose!</p>
+                        <div class="twoButtons">
+                            <a href="http://amieeverett.com/amie_everett_project3/index.html" target="_blank"><button class="btnRect">Web</button></a>
+                            <a href="https://codepen.io/panchorooo/pen/yPMbJx" target="_blank"><button class="btnRect">CodePen</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!-- end bee game project -->
+                
+                <!-- moody project -->
+                <li class="project">
+                    <img src="../public/images/moody.gif" alt="Screenshot of mood app with word cloud of synonyms for the word sad and a gif of crying squirtles">
+                    <div class="tags">
+                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i><span>Firebase</span></h6>
+                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i><span>API</span></h6>
+                    </div>
+
+                    <div class="projectInfo">
+                        <div class="projectText">
+                            <h5>Moods & Gifs</h5>
+                            <p>An emotion app that uses the Oxford Dictionary API to find synonyms of your emotion and the Giphy API to get gifs.  All the data is stored in Firebase and used to generate a global word cloud.</p>
+                        </div>
+                        <div class="twoButtons">
+                            <a href="http://amieeverett.com/amie_everett_project4/index.html" target="_blank">
+                                <button class="btnRect">Web</button>
+                            </a>
+                            <a href="https://github.com/panchoroo/moody-app" target="_blank">
+                                <button class="btnRect" >Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- end moody project -->
+                
+                <!-- responsive project -->
+                <li class="project">
+                    <img src="../public/images/trada.jpg" alt="Screenshot of trada website">
+                    <div class="tags">
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>HTML5</span>
+                        </h6>
+                        <h6 class="tag">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>CSS3</span>
+                        </h6>
+                    </div>
+                    <div class="projectInfo">
+                        <h5>Trada Responsive</h5>
+                        <div class="projectText">
+                            <p>An exercise in making a responsive website from a psd design file. The site is for a hypothetical design company called Trada.</p>
+                        </div>
+                        <div class="twoButtons">
+                            <a href="http://amieeverett.com/amie_everett_project2/index.html" target="_blank">
+                                <button class="btnRect">Web</button>
+                            </a>
+                            <a href="https://github.com/panchoroo/trada" target="_blank">
+                                <button class="btnRect">Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- end responsive project -->
+            </ul>
+        </div>
+    </section>
+    <!-- end porfolio -->
+
+    <!-- <section class="dark darkBackground">
+        <h2>Want To Learn More?</h2>
+        <a href="#contact"><button class="btnRect">Contact Me</button></a>
+    </section> -->
+
     <section class="hobbies darkBackground">
         <h3 class="skillsHeader wrapper">My Hobbies</h3>
         <ul class="wrapper hobbiesList">
@@ -144,100 +336,6 @@
         </ul>
     </section>
     <!-- end hobbies -->
-
-    <section id="portfolio" class=" wrapper">
-        <div class="sectionHeader">
-            <h2>My
-                <span>Portfolio</span>
-            </h2>
-            <h6>Latest Work</h6>
-        </div>
-        <div class="">
-            <ul class="portfolio">
-                <li class="project">
-                    <img src="../public/images/bee_project.jpg" alt="Screenshot of bee game with friendly bee, flowers, and wasps as bad guys">
-                    <div class="tags">
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i><span>Javascript</span></h6>
-                        <h6 class="tag">
-                            <i class="fa fa-tag" aria-hidden="true"></i>
-                            <span>jQuery</span>
-                        </h6>
-                    </div>
-                    <h5>Bee Game</h5>
-                    <p>Use your cursor to move the bee and pollinate flowers by clicking on them.  Avoid hovering over the enemy wasps or you'll lose!</p>
-                    <div class="twoButtons">
-                        <a href="http://amieeverett.com/amie_everett_project3/index.html" target="_blank"><button class="btnRect">Web</button></a>
-                        <a href="https://codepen.io/panchorooo/pen/yPMbJx" target="_blank"><button class="btnRect">CodePen</button></a>
-                    </div>
-                </li>
-                <li class="project">
-                    <img src="../public/images/moody_project.jpg" alt="Screenshot of mood app with word cloud of synonyms for the word sad and a gif of crying squirtles">
-                    <div class="tags">
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i><span>Firebase</span></h6>
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i><span>API</span></h6>
-                    </div>
-                    <div class="projectText">
-                        <h5>Moods & Gifs</h5>
-                        <p>An emotion app that uses the Oxford Dictionary API to find synonyms of your emotion, the Giphy API to get gifs and Firebase to store global data.</p>
-                    </div>
-                    <div class="twoButtons">
-                        <a href="http://amieeverett.com/amie_everett_project4/index.html" target="_blank">
-                            <button class="btnRect">Web</button>
-                        </a>
-                        <a href="https://github.com/panchoroo/moody-app" target="_blank">
-                            <button class="btnRect" >Github</button>
-                        </a>
-                    </div>
-                </li>
-                <li class="project">
-                    <img src="../public/images/grocery_project.jpg" alt="">
-                    <div class="tags">
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i>
-                        <span>React</span></h6>
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i>
-                        <span>Firebase</span></h6>
-                    </div>
-                    <h5>Grocery App</h5>
-                    <p>A grocery app that keeps track of what's in your pantry and automatically adds it to your shopping list when it's running low.</p>
-                    <div class="twoButtons">
-                        <a href="http://amieeverett.com/amie_everett_project5/index.html" target="_blank">
-                            <button class="btnRect">Web</button>
-                        </a>
-                        <a href="https://github.com/panchoroo/groceryApp" target="_blank">
-                            <button class="btnRect">Github</button>
-                        </a>
-                    </div>
-                </li>
-                <li class="project">
-                    <img src="../public/images/wine_project.jpg" alt="">
-                    <div class="tags">
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i>
-                        <span>React</span></h6>
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i>
-                        <span>Firebase</span></h6>
-                        <h6 class="tag"><i class="fa fa-tag" aria-hidden="true"></i>
-                        <span>API</span></h6>
-                    </div>
-                    <h5>Tasting Notes</h5>
-                    <p>Login with email, then search the LCBO API to find a wine of your choice.  Add it to your pantry and add your own rating and tasting notes.</p>
-                    <div class="twoButtons">
-                        <a href="https://lcbo-agency.firebaseapp.com/pantry" target="_blank">
-                            <button class="btnRect">Web</button>
-                        </a>
-                        <a href="https://github.com/lcbo-team/lcbo-agency" target="_blank">
-                            <button class="btnRect">Github</button>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- end porfolio -->
-
-    <section class="dark darkBackground">
-        <h2>Want To Learn More?</h2>
-        <a href="#contact"><button class="btnRect">Contact Me</button></a>
-    </section>
 
     <section id="blog" class=" wrapper">
         <div class="sectionHeader">
@@ -307,12 +405,14 @@
                 <input type="submit" value="Send">
             </form>
         </div>
-        <iframe width="100%" height="570px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369484.52058328013!2d-79.60103278135236!3d43.65653529382275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C+ON!5e0!3m2!1sen!2sca!4v1512850554940"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="map"></div>
+        <!-- <img src="../public/images/map.png" alt="Map of Toronto"> -->
+        <!-- <iframe width="100%" height="570px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369484.52058328013!2d-79.60103278135236!3d43.65653529382275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C+ON!5e0!3m2!1sen!2sca!4v1512850554940"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
     </section>
     <!-- end contact -->
 
-    <footer class="darkBackground">
+    <footer class="darkBackground clearfix">
         <div class="footerInfo wrapper">
             <div class="contactMe">
                 <h6>Contact Me</h6>
@@ -337,7 +437,7 @@
 
                 <div class="aboutMe">
                     <h6>About Me</h6>
-                    <p>Hi! I'm Amie and I've always loved puzzles. I taught myself to code because it was just like solving a puzzle. I started with Python and solved coding challenges online. I was working a day job in childcare until I realized people would actually pay me to code! That's how I decided to become a Web Developer. Each time I write a new function it's like I'm solving a brand new puzzle.</p>
+                    <p>Hi! I'm Amie and I've always loved puzzles. I taught myself Java to solve Project Euler problems. As much as I like solving complex math problems, I also like making things look pretty. That’s why I decided to focus on Web Development.  I can create a beautiful, clean website that works.  And each time I write a new function it's like I'm solving a brand new puzzle.</p>
                 </div>
                 <div class="followMe">
                     <h6>Follow Me</h6>
@@ -352,7 +452,7 @@
         <p class="copyright ">
             © <span>Amie Everett</span> 2017 Design By Spark-Media. All Rights Reserved.
         </p>
-        <a href="#home" class="backToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        <a href="#top" class="backToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </footer>
 
     <script src="https://use.fontawesome.com/863f28bd20.js"></script>

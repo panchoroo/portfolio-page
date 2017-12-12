@@ -4,11 +4,15 @@ footer {
     p {
         color: darken($lightColor, 20);
         text-align: left;
+        padding: 10px 5px;
     }
     
     .aboutInfoFooter li{
         width: 90%;
         text-align: left;
+        span {
+            color: darken($lightColor, 40);
+        }
     }
 
     h6 {
