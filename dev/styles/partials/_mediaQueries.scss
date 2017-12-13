@@ -10,16 +10,16 @@
     .headerRow, .bottomAbout, .hobbiesList,   {
         max-width: 500px;
     }
+    .blog {
+        justify-content: space-around;
+    }
     .project, .blogPost {
         width: calc(50% - 30px);
-        // margin: 15px 15px 35px 15px;
-        // &:first-child {
-        //     margin-left: 15px;
-        // }
-        // &:last-child {
-        //     margin-right: 15px;
-        // }
+        img {
+            max-height: 295px;
+        }
     }
+
     ul.portfolio, ul.blog {
         margin: 50px 6% 70px 6%;
     } 
@@ -29,9 +29,9 @@
         .contactMe {
             width: 75%;
             margin-bottom: 50px;
-            ul li:last-child {
-                display: none;
-            }
+            // ul li:last-child {
+            //     display: none;
+            // }
         }
         .followMe h6{
             margin-top: 70px;
@@ -82,6 +82,10 @@
     }
     .skills i {
         box-shadow: 2px 2px 4px lighten($darkColor, 50);
+    }
+    .contact .map {
+        // display: none;
+        background-image: linear-gradient(rgb(132, 231, 249),  rgb(0,0,0));
     }
 }
 
@@ -136,11 +140,14 @@
             order: 2;
         }      
     }
-    
-    iframe {
+    .contact .map {
         display: none;
-        
     }
+    
+    // iframe {
+    //     display: none;
+        
+    // }
     .contact .wrapper .contactForm {
         position: relative;
         overflow: hidden;
@@ -237,8 +244,10 @@
     .portfolio li, .blog li {
         width: 100%;
     }
-    .blog img {
+    .blog img, .project img {
         width: 100%;
+        max-height: 510px;
+        height: auto;
     }
     .leftAbout {
         margin: 20px 20px 70px 20px;
