@@ -7,9 +7,12 @@
         border: 10px solid $accentColor;
         width: 100%;
     }
-
     p {
         margin: 20px 75px 20px 0;
+        &>a{
+            color: darken($accentColor,20);
+            // color: rgb(2, 135, 158);
+        }
     }
 }
 

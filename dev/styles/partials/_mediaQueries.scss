@@ -13,10 +13,19 @@
     .blog {
         justify-content: space-around;
     }
-    .project, .blogPost {
+    .blogPost {
         width: calc(50% - 30px);
+
+        img, {
+            max-width: 322px;
+        }
+    }
+    .project {
+        margin: 60px 10px;
+        width: calc(50% - 30px);
+        max-width: 223px;
         img {
-            max-height: 295px;
+            max-width: 223px;
         }
     }
 
@@ -29,9 +38,6 @@
         .contactMe {
             width: 75%;
             margin-bottom: 50px;
-            // ul li:last-child {
-            //     display: none;
-            // }
         }
         .followMe h6{
             margin-top: 70px;
@@ -84,7 +90,6 @@
         box-shadow: 2px 2px 4px lighten($darkColor, 50);
     }
     .contact .map {
-        // display: none;
         background-image: linear-gradient(rgb(132, 231, 249),  rgb(0,0,0));
     }
 }
@@ -144,10 +149,6 @@
         display: none;
     }
     
-    // iframe {
-    //     display: none;
-        
-    // }
     .contact .wrapper .contactForm {
         position: relative;
         overflow: hidden;
@@ -199,9 +200,6 @@
         h4 {
             margin-left: 50px;
         }
-        // input#toggle:checked {
-        //     right: 50px;
-        // }
 
         .headerRow nav {
             box-shadow: 2px 2px 24px lighten($darkColor, 50);
@@ -209,9 +207,6 @@
                 @include hover($lightColor, $darkColor, $accentColor, 1s);
             } 
         }
-        // input#toggle:checked+nav {
-        //     right: 15px;  
-        // }
 
         label[for="toggle"] {
             display: block;
@@ -243,11 +238,15 @@
 
     .portfolio li, .blog li {
         width: 100%;
+        max-width: 223px;
     }
     .blog img, .project img {
         width: 100%;
-        max-height: 510px;
+        max-height: 300px;
         height: auto;
+    }
+    .blog img {
+        max-height: 223px;
     }
     .leftAbout {
         margin: 20px 20px 70px 20px;
