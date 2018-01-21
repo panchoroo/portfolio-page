@@ -36,7 +36,7 @@ footer {
     .copyright {
         background: $accentColor;
         color: $darkColor;
-        span {
+        .footerName {
             color: $lightColor;
         }
         margin-bottom: 0;
